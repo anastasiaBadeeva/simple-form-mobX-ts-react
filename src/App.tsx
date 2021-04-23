@@ -5,7 +5,7 @@ import store from './store/store'
 import {useInput} from './hooks/useInput'
 import { Modal } from './components/Modal';
 
-const App  = observer(() => {
+const App : React.FC  = observer(() => {
   const [active, setActive] = React.useState<boolean>(false)
   const nameInput :any = useInput('',{ isEmpty: true })
   const surnameInput :any = useInput('',{isEmpty: true })
